@@ -1,0 +1,78 @@
+.theme-switch-wrapper
+{
+	display: flex;
+	align-items: center; 
+}
+em
+{
+	margin-left: 10px;
+}
+.theme-switch
+{
+	display: inline-block;
+	position: relative;
+}
+.theme-switch input
+{
+	display: none;
+}
+.slider
+{
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	$positionAb: absolute;
+	position: $positionAb;
+}
+.slider:before
+{
+	bottom: 4px;
+	top: 4px;
+	position $positionAb;
+}
+h1
+{
+	margin: 0px;
+	$text-center: center;
+	text-align: $text-center;
+}
+.actu
+{
+	text-align: $text-center;
+}
+p
+{
+	text-align: $text-center;
+}
+.images2
+{
+	text-align: $text-center;
+	$margin: 0 auto;
+	margin: $margin;
+}
+#coeur
+{
+	$padtop: 20px;
+	padding-top: $padtop;
+	$floatL: left;
+	float: $floatL;
+}
+#jaime
+{
+	margin: $margin;
+	float: $floatL;
+	padding-top: $padtop;
+}
+#pouce
+{
+	float: $floatL;
+	padding-top: $padtop;
+	margin-left: 15px;
+}
+#jaimepas
+{
+	margin: $margin;
+	float: $floatL;
+	padding-top: $padtop;	
+}
