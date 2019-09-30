@@ -80,7 +80,7 @@ function getRandomInt(max) {
     return Math.floor(Math.random(0) * Math.floor(max));
 }
 console.log(getRandomInt(arr.length));
-let article = arr[getRandomInt(arr.length)]
+let article = arr[getRandomInt(arr.length)];
 console.log(article);
 
 let i = 0;
