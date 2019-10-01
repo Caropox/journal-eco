@@ -1,0 +1,24 @@
+{
+  "name": "journal-eco",
+  "version": "1.0.0",
+  "description": "Le journal qui lutte contre la pollution",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caropox/journal-eco.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caropox/journal-eco/issues"
+  },
+  "homepage": "https://github.com/Caropox/journal-eco#readme",
+  "devDependencies": {
+    "webpack": "^4.41.0",
+    "webpack-dev-server": "^3.8.1"
+  }
+}
