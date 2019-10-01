@@ -22,57 +22,52 @@ em
 	top: 0;
 	left: 0;
 	right: 0;
-	$positionAb: absolute;
-	position: $positionAb;
+	position: absolute;
 }
 .slider:before
 {
 	bottom: 4px;
 	top: 4px;
-	position $positionAb;
+	position: absolute;
 }
 h1
 {
 	margin: 0px;
-	$text-center: center;
-	text-align: $text-center;
+	text-align: center;
 }
 .actu
 {
-	text-align: $text-center;
+	text-align: center;
 }
 p
 {
-	text-align: $text-center;
+	text-align: center;
 }
 .images2
 {
-	text-align: $text-center;
-	$margin: 0 auto;
-	margin: $margin;
+	text-align: center;
+	margin: 0 auto;
 }
 #coeur
 {
-	$padtop: 20px;
-	padding-top: $padtop;
-	$floatL: left;
-	float: $floatL;
+	padding-top: 8px;
+	float: left;
 }
 #jaime
 {
-	margin: $margin;
-	float: $floatL;
-	padding-top: $padtop;
+	margin: 0 auto;
+	float: left;
+	padding-top: 20px;
 }
 #pouce
 {
-	float: $floatL;
-	padding-top: $padtop;
+	float: left;
+	padding-top: 8px;
 	margin-left: 15px;
 }
 #jaimepas
 {
-	margin: $margin;
-	float: $floatL;
-	padding-top: $padtop;	
+	margin: 0 auto;
+	float: left;
+	padding-top: 20px;	
 }
