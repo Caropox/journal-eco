@@ -5,7 +5,7 @@ let config = {
   entry: "./src/js/main.js",
   output: {
     path: path.resolve(__dirname, "./public"),
-    filename: "./src/js/main.js"
+    filename: "./js/main.js"
   }
 }
 

@@ -1,0 +1,74 @@
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+em {
+  margin-left: 10px;
+}
+
+.theme-switch {
+  display: inline-block;
+  position: relative;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.slider:before {
+  bottom: 4px;
+  top: 4px;
+  position: absolute;
+}
+
+h1 {
+  margin: 0px;
+  text-align: center;
+}
+
+.actu {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.images2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#coeur {
+  padding-top: 8px;
+  float: left;
+}
+
+#jaime {
+  margin: 0 auto;
+  float: left;
+  padding-top: 20px;
+}
+
+#pouce {
+  float: left;
+  padding-top: 8px;
+  margin-left: 15px;
+}
+
+#jaimepas {
+  margin: 0 auto;
+  float: left;
+  padding-top: 20px;
+}
+
+/*# sourceMappingURL=position.css.map */
