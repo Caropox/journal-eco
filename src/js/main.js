@@ -4,9 +4,13 @@ document.addEventListener("DOMContentLoaded", async function(event) {
     function switchTheme(e) {
         if (e.target.checked) {
             document.documentElement.setAttribute('data-theme', 'dark');
+            document.querySelector(".img1 img").setAttribute("src", "images/menu2-white.svg");
+            document.querySelector("#pouce").setAttribute("src", "images/dislike-white.svg");
         }
         else {
             document.documentElement.setAttribute('data-theme', 'light');
+            document.querySelector(".img1 img").setAttribute("src", "images/menu2.svg");
+            document.querySelector("#pouce").setAttribute("src", "images/dislike.svg");
         }    
     }
 
@@ -28,32 +32,10 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 /*
 Fonction qui appelle l'API 
 */
-async function callAPI(){
-    let articles_api = await fetch('https://newsapi.org/v2/everything?q=pollution&apiKey=2f8847d9e4e1440ea93c57a8d9539684');
-    return await articles_api.json();
-}
 
-console.log(callAPI());
+// async function callAPI(){
+//     let articles_api = await fetch('https://newsapi.org/v2/everything?q=pollution&apiKey=2f8847d9e4e1440ea93c57a8d9539684');
+//     return await articles_api.json();
+// }
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    // Gestion du menu mobile
-    document.getElementById("nav-mobile-open").addEventListener("click", openNavMenu, false);
-    document.getElementById("nav-mobile-close").addEventListener("click", closeNavMenu, false);
-
-    var mobileMenuLinks = document.querySelectorAll("nav#nav-mobile ul li a");
-    mobileMenuLinks.forEach(function(linkElem) {
-        linkElem.addEventListener("click", closeNavMenu, false);
-    })
-
-    function openNavMenu() {
-        var menuToEdit = document.getElementById("mobileMenu");
-        menuToEdit.classList.remove("hidden"); // EnlÃ¨ve la classe CSS
-        menuToEdit.removeAttribute("hidden"); // EnlÃ¨ve l'attribut HTML
-    }
-
-    function closeNavMenu() {
-        var menuToEdit = document.getElementById("mobileMenu");
-        menuToEdit.classList.add("hidden"); // Ajoute la classe CSS
-        menuToEdit.setAttribute("hidden","hidden"); // Ajoute l'attribut HTML
-    }
-});
+// console.log(callAPI());

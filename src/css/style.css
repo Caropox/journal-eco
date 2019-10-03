@@ -91,11 +91,13 @@ h1
 }
 .img1
 {
-	width: 80px;
-	top: 20px;
+	top: 25px;
 	position: fixed;
 	right: 20px;
     cursor: pointer;
+}
+.img1 img {
+	width: 60px;
 }
 h2
 {
