@@ -21,14 +21,16 @@ document.addEventListener("DOMContentLoaded", async function(event) {
             toggleSwitch.checked = true;
         }
     }
+
+    let articles = await callAPI();
+    console.log(articles);
 })
 /*
 Fonction qui appelle l'API 
 */
 async function callAPI(){
-    let articles = await fetch('https://newsapi.org/v2/top-headlines?q=pollution&apiKey=2f8847d9e4e1440ea93c57a8d9539684');
-    console.log(articles)
-    return await articles.json();
+    let articles_api = await fetch('https://newsapi.org/v2/everything?q=pollution&apiKey=2f8847d9e4e1440ea93c57a8d9539684');
+    return await articles_api.json();
 }
 
 console.log(callAPI());

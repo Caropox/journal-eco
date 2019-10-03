@@ -1,7 +1,7 @@
 :root 
 {
     --p-color: #000;
-    --bg-color: #4CAB22;
+    --bg-color: rgba(19, 233, 47, 0.74);
 }
 [data-theme="dark"] 
 {
@@ -10,7 +10,7 @@
 }
 body
 {
-	background-color: #4CAB22;
+	background-color: rgba(19, 233, 47, 0.74);
 	background-color: var(--bg-color);
 	color: var(--color);
 }
@@ -85,19 +85,28 @@ h1
 {
 	margin: 0px;
 	font-family: 'Indie Flower', cursive;
-	font-size: 50px;
-	color: #DBDEDA;
+	font-size: 70px;
+	color: #707070;
 	text-align: center;
+}
+.img1
+{
+	width: 80px;
+	top: 20px;
+	position: fixed;
+	right: 20px;
+    cursor: pointer;
 }
 h2
 {
 	text-decoration: underline;
+	font-size: 60px;
 }
 .actu
 {
 	font-family: 'Indie Flower', cursive;
 	font-size: 50px;
-	color: #DBDEDA;
+	color: #707070;
 	text-align: center;
 }
 p
