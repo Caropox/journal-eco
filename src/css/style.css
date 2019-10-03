@@ -19,8 +19,12 @@ body
 {
 	display: flex;
 	align-items: center;
+	position: fixed;
+	top: 25px;
+	left: 25px;
+	font-family: 'Montserrat', sans-serif;
 }
-em 
+.theme-switch-wrapper > p
 {
 	color: var(--p-color);
 	margin-left: 10px;

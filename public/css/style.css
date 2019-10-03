@@ -19,6 +19,10 @@ body
 {
 	display: flex;
 	align-items: center;
+	position: fixed;
+	top: 25px;
+	left: 25px;
+	font-family: 'Montserrat', sans-serif;
 }
 em 
 {
