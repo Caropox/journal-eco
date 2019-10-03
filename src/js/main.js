@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", async function(event) {
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
     function switchTheme(e) {
@@ -22,3 +22,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     }
 })
+/*
+Fonction qui appelle l'API 
+*/
+async function callAPI(){
+    let articles = await fetch('https://newsapi.org/v2/top-headlines?q=environment&apiKey=2f8847d9e4e1440ea93c57a8d9539684');
+    console.log(articles)
+    return await articles.json();
+}
+
+console.log(callAPI());
+
