@@ -26,16 +26,23 @@ document.addEventListener("DOMContentLoaded", async function(event) {
         }
     }
 
-    let articles = await callAPI();
-    console.log(articles);
+    let resultat_api = await callAPI();
+    console.log(resultat_api);
+    console.log(resultat_api.articles[0].title);
+    let articleTitle = resultat_api.articles[0].title;
+    let articleImage = resultat_api.articles[0].urlToImage;
+    console.log(articleImage);
+    let articleDescription = resultat_api.articles[0].description;
+    console.log(articleDescription);
+
 })
 /*
 Fonction qui appelle l'API 
 */
 
-// async function callAPI(){
-//     let articles_api = await fetch('https://newsapi.org/v2/everything?q=pollution&apiKey=2f8847d9e4e1440ea93c57a8d9539684');
-//     return await articles_api.json();
-// }
+async function callAPI(){
+let articles_api = await fetch('https://newsapi.org/v2/everything?q=pollution&apiKey=2f8847d9e4e1440ea93c57a8d9539684');
+return await articles_api.json();
+}
 
-// console.log(callAPI());
+console.log(callAPI());
