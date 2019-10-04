@@ -1,7 +1,7 @@
 :root 
 {
     --p-color: #000;
-    --bg-color: #4CAB22;
+    --bg-color: rgba(19,233,47,0.74);
 }
 [data-theme="dark"] 
 {
@@ -10,7 +10,7 @@
 }
 body
 {
-	background-color: #4CAB22;
+	background-color: rgba(19,233,47,0.74);
 	background-color: var(--bg-color);
 	color: var(--color);
 }
@@ -86,7 +86,7 @@ h1
 	margin: 0px;
 	font-family: 'Indie Flower', cursive;
 	font-size: 50px;
-	color: #DBDEDA;
+	color: #AAAAAA;
 	text-align: center;
 }
 h2
@@ -97,7 +97,7 @@ h2
 {
 	font-family: 'Indie Flower', cursive;
 	font-size: 50px;
-	color: #DBDEDA;
+	color: #AAAAAA;
 	text-align: center;
 }
 p
