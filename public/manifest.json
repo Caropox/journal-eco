@@ -5,7 +5,7 @@
     {
       "src": "images/leaf.png",
       "type": "image/png",
-      "sizes": "128x128"
+      "sizes": "256x256"
     }
   ],
   "start_url": "/journal-eco/public/?source=pwa",
