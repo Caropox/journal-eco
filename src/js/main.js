@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", async function(event) {
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
+// Dark mode
     function switchTheme(e) {
         if (e.target.checked) {
             document.documentElement.setAttribute('data-theme', 'dark');
@@ -26,6 +27,8 @@ document.addEventListener("DOMContentLoaded", async function(event) {
         }
     }
 
+// API titre/Image/description
+
     let resultat_api = await callAPI();
     console.log(resultat_api);
     console.log(resultat_api.articles[0].title);
@@ -35,10 +38,16 @@ document.addEventListener("DOMContentLoaded", async function(event) {
     let articleDescription = resultat_api.articles[0].description;
     console.log(articleDescription);
 
+    document.getElementById('titreville').innerHTML = articleTitle;
+    document.getElementById('ville').setAttribute("src",articleImage);
+
+    let descriptionHTML = document.createElement("p");
+    let textHTML = document.createTextNode(articleDescription);
+    descriptionHTML.appendChild(textHTML);
+    document.getElementsByClassName('images2')[0].appendChild(descriptionHTML);
 })
-/*
-Fonction qui appelle l'API 
-*/
+
+/*Fonction qui appelle l'API */
 
 async function callAPI(){
 let articles_api = await fetch('https://newsapi.org/v2/everything?q=pollution&apiKey=2f8847d9e4e1440ea93c57a8d9539684');
