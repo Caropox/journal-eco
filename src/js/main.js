@@ -41,10 +41,8 @@ document.addEventListener("DOMContentLoaded", async function(event) {
     document.getElementById('titreville').innerHTML = articleTitle;
     document.getElementById('ville').setAttribute("src",articleImage);
 
-    let descriptionHTML = document.createElement("p");
-    let textHTML = document.createTextNode(articleDescription);
-    descriptionHTML.appendChild(textHTML);
-    document.getElementsByClassName('images2')[0].appendChild(descriptionHTML);
+    let divImages = document.getElementsByClassName('images2')[0];
+    divImages.insertAdjacentHTML("afterend",'<p class="description">'+articleDescription+'</p>');
 })
 
 /*Fonction qui appelle l'API */
