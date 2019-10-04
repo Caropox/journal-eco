@@ -1,0 +1,16 @@
+{
+  "short_name": "J-E",
+  "name": "JournalEco",
+  "icons": [
+    {
+      "src": "images/leaf.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    }
+  ],
+  "start_url": "/journal-eco/public/?source=pwa",
+  "background_color": "#FFF",
+  "display": "standalone",
+  "scope": "/public/",
+  "theme_color": "rgba(19, 233, 47, 0.74)"
+}
